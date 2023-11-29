@@ -30,7 +30,7 @@ productController.createProduct = async (req, res) => {
     await product.save();
     res.status(200).json({ status: "success", product });
   } catch (error) {
-    res.status(400).json({ status: "faul", error: error.message });
+    res.status(400).json({ status: "fail", error: error.message });
   }
 };
 
