@@ -1,6 +1,6 @@
 const Product = require("../models/Product");
 
-const PAGE_SIZE = 1;
+const PAGE_SIZE = 5;
 const productController = {};
 
 productController.createProduct = async (req, res) => {
@@ -80,7 +80,7 @@ productController.updateProduct = async (req, res) => {
       status,
     } = req.body;
 
-    const product = Product.findByIdAndUpdate(
+    const product = await Product.findByIdAndUpdate(
       { _id: productId },
       { sku, name, size, image, price, description, category, stock, status },
       { new: true }
