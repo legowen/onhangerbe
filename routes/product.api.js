@@ -20,4 +20,14 @@ router.put(
 );
 //Edit Product
 
+router.delete(
+  "/:id",
+  authController.authenticate,
+  authController.checkAdminPermission,
+  productController.deleteProduct
+);
+//Delete Product
+
+router.get("/:id", productController.getProductById);
+
 module.exports = router;
