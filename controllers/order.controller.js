@@ -31,6 +31,7 @@ orderController.createOrder = async (req, res) => {
     });
 
     await newOrder.save();
+    //After Save, Clear Cart
     res.status(200).json({ status: "success", orderNum: newOrder.orderNum });
   } catch (error) {
     return res.status(400).json({ status: "fail", error: error.message });
