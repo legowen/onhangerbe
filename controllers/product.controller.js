@@ -46,10 +46,10 @@ productController.getProducts = async (req, res) => {
     //   const products = await Product.find({});
     // }
     const cond = name
-      ? { name: { $regex: name, $options: "i" } }
-      : // ? { name: { $regex: name, $options: "i" }, isDeleted: false }
-        {};
-    // : { isDeleted: false };
+      ? { name: { $regex: name, $options: "i" }, isDeleted: false }
+      : { isDeleted: false };
+
+
     let query = Product.find(cond);
     let response = { status: "success" };
     if (page) {
