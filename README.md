@@ -9,6 +9,8 @@
 ![AWS](https://img.shields.io/badge/AWS-%230072C6.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 ## Function
-* Find Product
-* Login page
-* Product page
+* Request and response with FE
+* Login and Register Account and Save Account with userController
+* Authenticate Account and Send Data to FE
+* Sending Add and Edit Product and save it to Data
+* Request Response Cart Data to DB and FE
