@@ -1,4 +1,5 @@
 # Shoppingmall Project
+(Under AWS Deploy Progressing) 
 <img width='70%' src="https://github.com/legowen/Portfolio-img/blob/main/img/shoppingmallfe.png"/>
 * Demo: (https://shoppingmallfe.netlify.app)
 
