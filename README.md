@@ -3,6 +3,7 @@
 <br>
 <img width='70%' src="https://github.com/legowen/Portfolio-img/blob/main/img/shoppingmallfe.png"/>
 * Demo: (https://shoppingmallfe.netlify.app)
+  (FE Demo)
 
 ## Tech
 ![Node](https://img.shields.io/badge/-Nodejs-43853d?style=for-the-badge&logo=Node.js&logoColor=white)
